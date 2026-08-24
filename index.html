@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SJC Transportes | Em construção</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(0, 102, 255, 0.35),
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 80% 80%,
+                    rgba(0, 70, 180, 0.20),
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #0057ff 0%,
+                    #003bb8 30%,
+                    #00143d 60%,
+                    #000000 100%
+                );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Efeito de brilho no fundo */
+
+        body::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+
+            background: rgba(0, 102, 255, 0.15);
+            filter: blur(100px);
+
+            top: -200px;
+            right: -150px;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1100px;
+
+            padding: 40px 30px;
+
+            text-align: center;
+
+            z-index: 1;
+        }
+
+        /* LOGO */
+
+        .logo {
+            width: 180px;
+            height: 90px;
+
+            margin: 0 auto 60px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 16px;
+
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(10px);
+
+            color: rgba(255, 255, 255, 0.6);
+
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .logo img {
+            max-width: 140px;
+            max-height: 70px;
+            object-fit: contain;
+        }
+
+        /* ÍCONE */
+
+        .icon {
+            width: 90px;
+            height: 90px;
+
+            margin: 0 auto 35px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            font-size: 38px;
+
+            box-shadow:
+                0 0 40px rgba(0, 102, 255, 0.25);
+        }
+
+        /* TÍTULO */
+
+        h1 {
+            font-size: clamp(42px, 6vw, 76px);
+
+            font-weight: 700;
+
+            line-height: 1.05;
+
+            letter-spacing: -2px;
+
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #5fa3ff;
+        }
+
+        /* TEXTO */
+
+        .description {
+            max-width: 650px;
+
+            margin: 0 auto;
+
+            color: rgba(255, 255, 255, 0.75);
+
+            font-size: 18px;
+
+            line-height: 1.7;
+        }
+
+        /* LINHA */
+
+        .line {
+            width: 80px;
+            height: 3px;
+
+            margin: 35px auto;
+
+            border-radius: 10px;
+
+            background: #2f80ff;
+
+            box-shadow:
+                0 0 20px rgba(47, 128, 255, 0.7);
+        }
+
+        /* RODAPÉ */
+
+        .footer {
+            margin-top: 70px;
+
+            color: rgba(255, 255, 255, 0.45);
+
+            font-size: 13px;
+
+            letter-spacing: 0.5px;
+        }
+
+        /* RESPONSIVO */
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 30px 20px;
+            }
+
+            .logo {
+                margin-bottom: 45px;
+            }
+
+            h1 {
+                letter-spacing: -1px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .footer {
+                margin-top: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- LOGO DA EMPRESA -->
+        <div class="logo">
+
+            
+
+                <img src="fullog.png" alt="SJC Transportes">
+
+        </div>
+
+
+        <!-- CONTEÚDO -->
+
+        <h1>
+            Estamos <span>construindo</span>
+            algo novo.
+        </h1>
+
+        <div class="line"></div>
+
+        <p class="description">
+            Estamos preparando uma nova experiência para atender
+            nossos clientes com ainda mais qualidade, eficiência
+            e soluções para sua operação.
+        </p>
+
+
+        <p class="footer">
+            Em breve, estaremos de volta.
+        </p>
+
+    </main>
+
+</body>
+</html>
