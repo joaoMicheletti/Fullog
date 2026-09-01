@@ -18,10 +18,7 @@ body {
     background: #fff;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
+
 
 a {
     text-decoration: none;
@@ -159,7 +156,7 @@ a {
 ========================================================== */
 
 .diferenciais {
-    padding: 25px 0;
+    padding: 25px;
 
     background:
         linear-gradient(
@@ -183,16 +180,22 @@ a {
 
 .diferencial {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 15px;
 }
 .diferencial-icon, .txtIcon {
-    width: 50%;
+    width: 40%;
+    flex-direction: column;
+}
+.diferencial-icon {
+    float: left;
 }
 .iconHero {
-    width: 40%;
-    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
 }
 
 .diferencial h3 {
