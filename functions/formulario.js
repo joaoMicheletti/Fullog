@@ -7,7 +7,7 @@ const formOrcamento = document.querySelector("#formOrcamento");
 
 // Número do WhatsApp da empresa
 // Formato: 55 + DDD + número
-const numeroWhatsApp = "+5511976837346";
+const numeroWhatsApp = "+5511933766883";
 
 
 formOrcamento.addEventListener("submit", function (event) {
